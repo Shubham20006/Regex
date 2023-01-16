@@ -13,7 +13,7 @@ namespace RegexAssignment
 
             MethodStoring.ForFirstName();
             MethodStoring.ForLatName();
-            MethodStoring.Foremail();
+             MethodStoring.Foremail();
             MethodStoring.ForNumber();
             MethodStoring.ForPassword();
         }
