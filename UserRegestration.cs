@@ -14,7 +14,7 @@ namespace RegexAssignment
         public static string Lastname = "^[A-Z]{1}[a-z]{2}$";
         public static string Email= "^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$";
         public static string Mob = "^[1-9]{2}[: :][0-9]{10}$";
-        public static string Pass = "^.*(?=.{8,})(?=.*[A-Z])";
+        public static string Pass = "^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])";
         public void firstName(string Nm)
         {
              a=Regex.IsMatch(Nm,Firstname);

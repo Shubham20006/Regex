@@ -45,7 +45,7 @@ namespace RegexAssignment
         }
         public static void ForPassword()
         {
-            Console.WriteLine("\nRule for Password:-\n1)Minimum 8 character required.\n2)Atleast 1 char should be capital");
+            Console.WriteLine("\nRule for Password:-\n1)Minimum 8 character required.\n2)Atleast 1 char should be capital\n3)Atleast 1 char should be numeric");
             Console.WriteLine("\nEnter password : ");
             string Pw = Console.ReadLine();
 
