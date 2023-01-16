@@ -28,12 +28,20 @@ namespace RegexAssignment
         }
         public static void Foremail()
         {
-            Console.WriteLine("\nRule for Email:-\n1)only 3 character allowed.\n2)Only First char should capital");
             Console.WriteLine("\nEnter Email : ");
             string Em = Console.ReadLine();
 
             UserRegestration UR = new UserRegestration();
             UR.email(Em);
+        }
+        public static void ForNumber()
+        {
+            Console.WriteLine("\nRule for Number:-\n1)entry code of 2 digit.\n2)give space after entry code\n3)only 10 integer allowed in mobile number.");
+            Console.WriteLine("\nEnter Mobilr number with country code : ");
+            string Mb = Console.ReadLine();
+
+            UserRegestration UR = new UserRegestration();
+            UR.mobile(Mb);
         }
     }
 }
