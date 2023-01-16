@@ -26,5 +26,14 @@ namespace RegexAssignment
             UserRegestration UR = new UserRegestration();
             UR.LastName(Lm);
         }
+        public static void Foremail()
+        {
+            Console.WriteLine("\nRule for Email:-\n1)only 3 character allowed.\n2)Only First char should capital");
+            Console.WriteLine("\nEnter Email : ");
+            string Em = Console.ReadLine();
+
+            UserRegestration UR = new UserRegestration();
+            UR.email(Em);
+        }
     }
 }
