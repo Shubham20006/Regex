@@ -10,8 +10,9 @@ namespace RegexAssignment
     {
         public static void Main(string[] args)
         {
+            
             MethodStoring.ForFirstName();
-           
+           MethodStoring.ForLatName();
         }
        
     }
