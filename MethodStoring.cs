@@ -43,5 +43,14 @@ namespace RegexAssignment
             UserRegestration UR = new UserRegestration();
             UR.mobile(Mb);
         }
+        public static void ForPassword()
+        {
+            Console.WriteLine("\nRule for Password:-\n1)Minimum 8 character required.");
+            Console.WriteLine("\nEnter password : ");
+            string Pw = Console.ReadLine();
+
+            UserRegestration UR = new UserRegestration();
+            UR.PassWord(Pw);
+        }
     }
 }

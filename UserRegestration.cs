@@ -14,6 +14,7 @@ namespace RegexAssignment
         public static string Lastname = "^[A-Z]{1}[a-z]{2}$";
         public static string Email= "^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$";
         public static string Mob = "^[1-9]{2}[: :][0-9]{10}$";
+        public static string Pass = "^[a-zA-Z]{8,}";
         public void firstName(string Nm)
         {
              a=Regex.IsMatch(Nm,Firstname);
@@ -64,6 +65,19 @@ namespace RegexAssignment
             else
             {
                 Console.WriteLine("{0} is not a valid Mobile number.", Mb);
+            }
+        }
+        public void PassWord(string Pw)
+        {
+            d = Regex.IsMatch(Pw, Pass);
+
+            if (d)
+            {
+                Console.WriteLine("{0} is a valid password.", Pw);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not a valid Password.", Pw);
             }
         }
 
