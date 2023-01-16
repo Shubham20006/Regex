@@ -28,7 +28,7 @@ namespace RegexAssignment
         }
         public static void Foremail()
         {
-            Console.WriteLine("\nRule for Email:-\n1)only 3 character allowed.\n2)Only First char should capital");
+
             Console.WriteLine("\nEnter Email : ");
             string Em = Console.ReadLine();
 
