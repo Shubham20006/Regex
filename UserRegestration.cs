@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoodAnalyserProject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,17 +18,21 @@ namespace RegexAssignment
         public static string Pass      = "^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).";
         public bool firstName(string Nm)
         {
-            a=Regex.IsMatch(Nm,Firstname);        
+           
+                a = Regex.IsMatch(Nm, Firstname);
 
-            if (a)
-            {
-                Console.WriteLine("{0} is a valid first name.", Nm);
-            }
-            else
-            {               
-                Console.WriteLine("{0} is not a valid first name.", Nm);               
-            }
-            return a;
+                if (a)
+                {
+                    Console.WriteLine("{0} is a valid first name.", Nm);
+                return a;
+                }
+                else
+                {                  
+                 throw new CustomException(CustomException.ExceptionType.INVALID_FIRSTNAME, "Enter Valid Name");
+                }
+                
+            
+          
         }
         public bool LastName(string Lm)
         {
@@ -39,7 +44,7 @@ namespace RegexAssignment
             }
             else
             {
-                Console.WriteLine("{0} is not a valid lastname.", Lm);
+                throw new CustomException(CustomException.ExceptionType.INVALID_LASTNAME, "Enter Valid LastName");
             }
             return b;
         }
@@ -53,7 +58,7 @@ namespace RegexAssignment
             }
             else
             {
-                Console.WriteLine("{0} is not a valid Email.", Em);
+                throw new CustomException(CustomException.ExceptionType.INVALID_EMAIL_ADDRESS, "Enter Valid EmailAddress");
             }
             return c;
         }
@@ -67,7 +72,7 @@ namespace RegexAssignment
             }
             else
             {
-                Console.WriteLine("{0} is not a valid Mobile number.", Mb);
+                throw new CustomException(CustomException.ExceptionType.INVALID_MOBILENUM, "Enter Valid Mobile number");
             }
             return d;
         }
@@ -81,7 +86,7 @@ namespace RegexAssignment
             }
             else
             {
-                Console.WriteLine("{0} is not a valid Password.", Pw);
+                throw new CustomException(CustomException.ExceptionType.INVALID_PASSWORD, "Enter Valid Password");
             }
             return d;
         }

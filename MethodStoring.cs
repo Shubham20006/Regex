@@ -27,10 +27,9 @@ namespace RegexAssignment
         }
         public static void ForEmail()
         {
-          //  Console.WriteLine("Rule for last Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
+          
             Console.WriteLine("\nEnter Email : ");
-            string Em = Console.ReadLine();
-           
+            string Em = Console.ReadLine();           
             UserRegestration UR = new UserRegestration();
             UR.email(Em);
         }
