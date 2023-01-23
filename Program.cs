@@ -11,11 +11,18 @@ namespace RegexAssignment
         public static void Main(string[] args)
         {
 
-            //MethodStoring.ForFirstName();
-            //MethodStoring.ForLastName();
-            //MethodStoring.ForEmail();
-            // MethodStoring.ForMob();
+            MethodStoring.ForFirstName();
+            MethodStoring.ForLastName();
+            MethodStoring.ForEmail();
+            MethodStoring.ForMob();
             MethodStoring.ForPassword();
+
+            Console.WriteLine("Ckecking By using lambda expression");
+            CheckingByLambdaExpression.ForFirstName();
+            CheckingByLambdaExpression.ForLastName();
+            CheckingByLambdaExpression.ForEmail();
+            CheckingByLambdaExpression.Formobile();
+            CheckingByLambdaExpression.ForPasword();
         }
 
     }
