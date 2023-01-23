@@ -17,35 +17,33 @@ namespace RegexAssignment
             UserRegestration UR = new UserRegestration();
             UR.firstName(Nm);
         }
-        public static void ForLatName()
+        public static void ForLastName()
         {
-            Console.WriteLine("\nRule for Last Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
-            Console.WriteLine("\nEnter Last Name : ");
+            Console.WriteLine("Rule for last Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
+            Console.WriteLine("\nEnter last Name : ");
             string Lm = Console.ReadLine();
-
             UserRegestration UR = new UserRegestration();
             UR.LastName(Lm);
         }
-        public static void Foremail()
+        public static void ForEmail()
         {
+          //  Console.WriteLine("Rule for last Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
             Console.WriteLine("\nEnter Email : ");
             string Em = Console.ReadLine();
-
             UserRegestration UR = new UserRegestration();
             UR.email(Em);
         }
-        public static void ForNumber()
+        public static void ForMob()
         {
-            Console.WriteLine("\nRule for Number:-\n1)entry code of 2 digit.\n2)give space after entry code\n3)only 10 integer allowed in mobile number.");
-            Console.WriteLine("\nEnter Mobilr number with country code : ");
+            //  Console.WriteLine("Rule for last Name:-\n1)only 3 character allowed.\n2)Only First char should capital");
+            Console.WriteLine("\nEnter Mobile : ");
             string Mb = Console.ReadLine();
-
             UserRegestration UR = new UserRegestration();
             UR.mobile(Mb);
         }
         public static void ForPassword()
         {
-            Console.WriteLine("\nRule for Password:-\n1)Minimum 8 character required.\n2)Atleast 1 char should be capital\n3)Atleast 1 char should be numeric");
+            Console.WriteLine("\nRule for Password:-\n1)Minimum 8 character required.\n2)Atleast 1 char should be capital");
             Console.WriteLine("\nEnter password : ");
             string Pw = Console.ReadLine();
 

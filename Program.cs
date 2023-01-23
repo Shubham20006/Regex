@@ -11,13 +11,13 @@ namespace RegexAssignment
         public static void Main(string[] args)
         {
 
-            MethodStoring.ForFirstName();
-            MethodStoring.ForLatName();
-             MethodStoring.Foremail();
-            MethodStoring.ForNumber();
+            //MethodStoring.ForFirstName();
+            //MethodStoring.ForLastName();
+            //MethodStoring.ForEmail();
+            // MethodStoring.ForMob();
             MethodStoring.ForPassword();
         }
-       
+
     }
 }
 

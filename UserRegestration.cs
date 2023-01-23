@@ -8,40 +8,42 @@ using System.Threading.Tasks;
 namespace RegexAssignment
 {
      public class UserRegestration
-    {
+     {
         bool a, b,c,d;
         public static string Firstname = "^[A-Z]{1}[a-z]{2}$";
-        public static string Lastname = "^[A-Z]{1}[a-z]{2}$";
-        public static string Email= "^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$";
-        public static string Mob = "^[1-9]{2}[: :][0-9]{10}$";
-        public static string Pass = "^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).*$";
-        public void firstName(string Nm)
+        public static string Lastname  = "^[A-Z]{1}[a-z]{2}$";
+        public static string Email     = "^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z](.in)*";
+        public static string Mob       = "^[1 - 9]{2}[: :][0-9]{10}$";
+        public static string Pass      = "^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).";
+        public bool firstName(string Nm)
         {
-             a=Regex.IsMatch(Nm,Firstname);
+            a=Regex.IsMatch(Nm,Firstname);        
 
             if (a)
             {
-                Console.WriteLine("{0} is a valid Last name.", Nm);
+                Console.WriteLine("{0} is a valid first name.", Nm);
             }
             else
             {               
-                Console.WriteLine("{0} is not a valid Last name.", Nm);               
+                Console.WriteLine("{0} is not a valid first name.", Nm);               
             }
+            return a;
         }
-        public void LastName(string Lm)
+        public bool LastName(string Lm)
         {
-             b = Regex.IsMatch(Lm, Lastname);
+            b = Regex.IsMatch(Lm, Lastname);
 
             if (b)
             {
-                Console.WriteLine("{0} is a valid name.", Lm);
+                Console.WriteLine("{0} is a valid lastname.", Lm);
             }
             else
             {
-                Console.WriteLine("{0} is not a valid name.", Lm);
+                Console.WriteLine("{0} is not a valid lastname.", Lm);
             }
+            return b;
         }
-        public void email(string Em)
+        public bool email(string Em)
         {
             c = Regex.IsMatch(Em, Email);
 
@@ -53,8 +55,9 @@ namespace RegexAssignment
             {
                 Console.WriteLine("{0} is not a valid Email.", Em);
             }
+            return c;
         }
-        public void mobile(string Mb)
+        public bool mobile(string Mb)
         {
             d = Regex.IsMatch(Mb, Mob);
 
@@ -66,8 +69,9 @@ namespace RegexAssignment
             {
                 Console.WriteLine("{0} is not a valid Mobile number.", Mb);
             }
+            return d;
         }
-        public void PassWord(string Pw)
+        public bool PassWord(string Pw)
         {
             d = Regex.IsMatch(Pw, Pass);
 
@@ -79,6 +83,7 @@ namespace RegexAssignment
             {
                 Console.WriteLine("{0} is not a valid Password.", Pw);
             }
+            return d;
         }
 
 
